@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+
+
+/* The * allows to set the margin for ALL elements on the page*/
+* { 
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+/*cursive is a secondary font for browsers that do not reconize Kavivanar*/
+
+body {
+  font-family: 'Kavivanar', cursive;
+  background: #c4e0dc
+}
+
+/*The max-width makes the form responsive in small screens by defining the max width of the wrapper. if the content is larger that the max-width it changes the height of the element */
+
+.wrapper {
+  margin: 0px auto 0;
+  width: 100%;
+  max-width: 680px;
+  padding:20px;
+  box-sizing: border-box;
+  }
+
+/*content*/
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  letter-spacing: 1px;
+}
+
+/* The width of the form is relative to its parent cotainer, the .wrapper*/
+
+.form { 
+  width: 100%;
+  margin: 25px 0;
+}
+
+.top-form, .middle-form, .bottom-form {
+  width: 100%;
+  margin: 10px 0;
+  min-height: 65px;
+}
+
+.form input[type="text"], .form textarea {
+  box-sizing: border-box;
+  border: 2px solid blue;
+  padding: 10px 5px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+/*add effect when input area is brought into focus*/
+.form input:focus,
+.form textarea:focus {
+  border-color: #444;
+}
+
+.form .label {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+/*target the name, email and phone sections of the top-form, width relative to width of top form, */
+.top-form .inner-form {
+  width: 29.9%;
+  float: left;
+  margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+  margin-right: 0;
+}
+
+.bottom-form textarea {
+  height:120px
+}
+
+.btn {
+  background: chocolate;
+  width:200px;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
